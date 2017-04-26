@@ -1,12 +1,42 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>This is the Title of the page</title>
-</head>
+  <head>
+    <title> Css 3 Bubble | Session 4 Assignment 4.1</title>
 
-<body>
-<h1>This is body of the page</h1>
-<p> Anything within the body of a web page is displayed in the main browser window</p>
+    <style>
+      /* Css bubble styles */
+       section {
+        margin-left: 50px;
+      }
+    
+      .bubble-tip {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-color: #5ac4ec;
+        transform: skew(34deg) rotate(-23deg);
+        top: 38px;
+        left: -7px;
+        position: relative;
+      }
+      
+      .bubble-content {
+        border-radius: 4px;
+        background-color: #5ac4ec;
+        width: 200px;
+        height: 100px;
+      }
 
-</body>
+    </style>
+  </head>
+
+  <body>
+    <section>
+      <!-- span for bubble tool tip -->
+      <span class='bubble-tip'></span>
+      <!-- div for bubble content -->
+      <div class='bubble-content'></div>
+    </section>
+  </body>
+
 </html>
